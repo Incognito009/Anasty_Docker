@@ -31,7 +31,7 @@ jobs:
         uses: docker/build-push-action@v3.0.0
         with:
           context: ./
-          file: ./Dockerfile Base/Dockerfile
+          file: ./Dockerfile Base/Dockerfile2
           push: true
           platforms: linux/amd64
           tags: ghcr.io/missemily2022/anasty:heroku

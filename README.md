@@ -4,5 +4,10 @@
 
 <b><i> Anasty - Master Branch</i></b><br>
 
-• <i>ARM Platform</i> - Use docker pull ghcr.io/missemily2022/anasty:master-arm<br>
-• <i>AMD Platform</i> - Use docker pull ghcr.io/missemily2022/anasty:master<br>
+• <i>ARM Platform - Use docker pull </i> missemily2022/anasty:master-arm<br>
+• <i>AMD Platform - Use docker pull </i> ghcr.io/missemily2022/anasty:master<br>
+
+
+<b><i> Anasty - Heroku Branch</i></b><br>
+
+• <i>Use docker pull </i> ghcr.io/missemily2022/anasty:heroku<br>

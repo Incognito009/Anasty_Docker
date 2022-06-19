@@ -1,4 +1,4 @@
-name: Publish to Github Registry (AMD)
+name: Publish to Github Registry (AMD) - Heroku
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:    
 
 env:
-  IMAGE: ghcr.io/missemily2022/anasty:master
+  IMAGE: ghcr.io/missemily2022/anasty:heroku
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
       - name: Login to ghcr.io Registry
         run: docker login https://ghcr.io -u token -p ${{ secrets.GH_TOKEN }}
 
-      - if: startsWith(github.ref, 'refs/heads/master')
+      - if: startsWith(github.ref, 'refs/heads/main')
         run: echo "TAG=latest" >> $GITHUB_ENV
 
       - if: startsWith(github.ref, 'refs/tags')
@@ -34,4 +34,4 @@ jobs:
           file: ./Dockerfile Base/Dockerfile
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/missemily2022/anasty:master
+          tags: ghcr.io/missemily2022/anasty:heroku

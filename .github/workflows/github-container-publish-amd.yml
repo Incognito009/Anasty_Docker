@@ -34,4 +34,4 @@ jobs:
           file: ./Dockerfile Base/Dockerfile
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/missemily2022/anasty:master
+          tags: ghcr.io/corvus/anasty:master
